@@ -1,11 +1,35 @@
 public class BinarySeach{
     public static void main(String[] args){
 
-        int[] a = {10,20,30,50,60,40};
-        int item = 30;
-        int last = a.length-1;
-        int i = BinarySearch(a ,0,last, item);
+        
+     
+
+       
+        int ch =1;
+        switch(ch){
+           
+            case 1 : int[] a = {10,20,30,50,60,40};
+                     int item = 30;
+                    linearSearch(a,item);
+                    break;
+
+            case 2 :  int[] a = {10,20,30,50,60,40};
+                    int item = 30;
+                    int last = a.length-1;
+                    int i = BinarySearch(a ,0,last, item); 
+                    break;
+
+        }
     
+    }
+
+    public static int linearSearch(int[] arr , int item){
+        for(int i =0;i<arr.length;i++){
+            if(arr[i]==item){
+                return i;
+            }
+        }
+        return -1;
     }
 
     public static int BinarySeach(int[] arr , int first,int last ,int item){
