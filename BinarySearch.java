@@ -1,11 +1,12 @@
 public class BinarySeach{
     public static void main(String[] args){
 
-        
-     
-
-       
+        do{
+            System.out.println("Press 1 for Linear Search");
+            System.out.println("Press 2 for Binary Search");
+            System.out.println("Press 3 to Exit");
         int ch =1;
+        
         switch(ch){
            
             case 1 : int[] a = {10,20,30,50,60,40};
@@ -19,7 +20,11 @@ public class BinarySeach{
                     int i = BinarySearch(a ,0,last, item); 
                     break;
 
+            default : System.out.println("Invalid input");
+                    break;
+
         }
+        }while(ch==3)
     
     }
 
